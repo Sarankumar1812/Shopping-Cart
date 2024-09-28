@@ -31,7 +31,7 @@ const Navbar = ({ cartCount, setIsModalOpen, setFilteredProducts }) => {
           </a>
           <div className="relative group">
             <button className="text-white">
-              Products <FontAwesomeIcon icon={faCaretDown} />
+              Products 
             </button>
             
           </div>
