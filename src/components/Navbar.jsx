@@ -4,7 +4,6 @@ import {
   faMagnifyingGlass,
   faBagShopping,
 } from "@fortawesome/free-solid-svg-icons";
-import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
 import Logo from "../assets/logo.png";
 
 const Navbar = ({ cartCount, setIsModalOpen, setFilteredProducts }) => {
@@ -34,43 +33,7 @@ const Navbar = ({ cartCount, setIsModalOpen, setFilteredProducts }) => {
             <button className="text-white">
               Products <FontAwesomeIcon icon={faCaretDown} />
             </button>
-            <div className="absolute hidden group-hover:block bg-white shadow-lg rounded-lg mt-1 z-10">
-              <a
-                href="#"
-                className="block px-4 py-3 text-gray-800 hover:bg-gray-200"
-                onClick={() => filterProductsByCategory("men clothing")}
-              >
-                Men
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-3 text-gray-800 hover:bg-gray-200"
-                onClick={() => filterProductsByCategory("women clothing")}
-              >
-                Women
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-3 text-gray-800 hover:bg-gray-200"
-                onClick={() => filterProductsByCategory("jewelery")}
-              >
-                Jewellery
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-3 text-gray-800 hover:bg-gray-200"
-                onClick={() => filterProductsByCategory("electronics")}
-              >
-                Electronics
-              </a>
-              <a
-                href="#"
-                className="block px-4 py-3 text-gray-800 hover:bg-gray-200"
-                onClick={() => setFilteredProducts(null)}
-              >
-                All Products
-              </a>
-            </div>
+            
           </div>
 
           <form onSubmit={handleSearch} className="flex items-center">
