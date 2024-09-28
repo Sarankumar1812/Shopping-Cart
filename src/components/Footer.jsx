@@ -131,7 +131,7 @@ const Footer = () => {
             </div>
             <div>
               <h3 className="text-lg font-semibold mb-4">Download Our App</h3>
-              <img src={Play} alt="Download App" className="h-20 w-36" />
+              <img src={Play} alt="Download App" className="h-24 " />
             </div>
           </div>
         </div>
