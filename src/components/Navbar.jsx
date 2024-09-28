@@ -5,6 +5,7 @@ import {
   faBagShopping,
 } from "@fortawesome/free-solid-svg-icons";
 import { faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import Logo from "../assets/logo.png";
 
 const Navbar = ({ cartCount, setIsModalOpen, setFilteredProducts }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -22,7 +23,7 @@ const Navbar = ({ cartCount, setIsModalOpen, setFilteredProducts }) => {
     <nav className="bg-gray-700 p-4 sticky top-0 z-10 shadow-lg">
       <div className="flex justify-around items-center">
         <h1 className="text-white text-2xl">
-          <img src="src/assets/logo.png" alt="Logo" />
+          <img src={Logo} alt="Logo" />
         </h1>
 
         <div className="flex items-center space-x-4 gap-10">
